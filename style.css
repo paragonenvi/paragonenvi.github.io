@@ -1,4 +1,4 @@
-
+﻿
 	*,
 *:before,
 *:after {
@@ -129,6 +129,7 @@ nav #menu li {
   line-height: 70px;
   position: relative;
   transition: all 0.17s ease-out;
+  color: #fff;
 }
 
 nav #menu li a {
@@ -138,6 +139,7 @@ nav #menu li a {
 nav #menu li:hover {
   background: #000;
 	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"%3E%3Cpath fill="%239C92AC" fill-opacity="0.4" d="M1 3h1v1H1V3zm2-2h1v1H3V1z"%3E%3C/path%3E%3C/svg%3E');
+	color:white;
 }
 
 #toggle {
@@ -212,6 +214,7 @@ nav #menu li:hover {
 
 #resize #menu li:hover {
 	background:#111;
+	color:white;
 }
 
 #resize #menu li a {
