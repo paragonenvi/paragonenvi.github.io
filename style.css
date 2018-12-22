@@ -1,0 +1,379 @@
+
+	*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+	vertical-align: inherit;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+/* html.debug * {outline: 1px dashed red;} */
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #1a1a1a;
+	font-family:sans-serif;
+	background-color: #000;
+}
+body, p, ul, ol, button, input, select, textarea {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8em;
+    font-size: 16px;
+    line-height: 1.6em;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+	font-size:20px;
+	letter-spacing:1px;
+	font-weight:bold;
+	margin-left:23px;
+	text-align: left;
+	text-transform: uppercase;
+}
+ h2, h3, h4{
+	text-transform: uppercase;
+	 font-weight:normal;
+margin-left:0;
+padding-bottom:10px;
+
+}
+a:link, a:visited {
+	color: inherit;
+}
+a:hover {
+	font-weight: 700;
+}
+.wrap{
+width:1000px;
+margin:60px auto;
+}
+#bodycopy{
+padding:30px;
+min-height:400px;
+width:100%;
+color:white;
+background:black;
+}
+
+nav {
+  background: #000;
+  height: 70px;
+  z-index: 1;
+}
+
+nav #brand {
+  float: left;
+  display: block;
+  margin-left: 20px;
+  font-size:50px;
+  font-weight: bold;
+	font-family: 'Major Mono Display', monospace;
+  cursor: pointer;
+  line-height: 70px;
+  position: relative;
+}
+
+
+nav #brand span {
+	font-family: sans-serif;
+  color: #fff;
+	font-size:13px;
+	font-variant:small-caps;
+	font-weight:bold;
+	letter-spacing:1px;
+	transition: all 0.3s ease-out;
+	margin-left:10px;
+  color: #777777;
+}
+nav #brand a {
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+nav #brand a:hover {
+  color: #777777;
+}
+
+nav #menu {
+  float: left;
+  right: 0;
+  position: absolute;
+	font-size:10px;
+	font-weight:bold;
+	letter-spacing:.9px;
+}
+
+nav #menu li {
+  display: inline-block;
+  padding: 0px 30px;
+  cursor: pointer;
+  line-height: 70px;
+  position: relative;
+  transition: all 0.17s ease-out;
+}
+
+nav #menu li a {
+  color: #fff;
+}
+
+nav #menu li:hover {
+  background: #000;
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4"%3E%3Cpath fill="%239C92AC" fill-opacity="0.4" d="M1 3h1v1H1V3zm2-2h1v1H3V1z"%3E%3C/path%3E%3C/svg%3E');
+}
+
+#toggle {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.17s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toggle .span {
+  height: 7px;
+  background: #333;
+  margin: 5px auto;
+  backface-visibility: hidden;
+}
+
+#toggle.on #one {
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+
+#toggle.on #two {
+  opacity: 0;
+}
+
+#toggle.on #three {
+  transform: rotate(-45deg) translateX(10px) translateY(-12px);
+}
+
+#resize {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  background: #ddd;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.17s ease-out;
+  display: table;
+}
+
+#resize #menu {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+	background:#fff;
+}
+
+#resize #menu li {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 50px;
+  min-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#resize #menu li:hover a {
+	color:white;
+  transition: all 0.355s ease-out;
+}
+
+#resize #menu li:hover {
+	background:#111;
+}
+
+#resize #menu li a {
+  color: #212121;
+	color:white;
+	color:#000;
+}
+
+#resize.active {
+  visibility: visible;
+  opacity: 0.99;
+}
+
+/***/
+.content {
+    width: 100%;
+}
+.cs {
+	padding-bottom: 0;
+	margin: auto;
+}
+.cs th, .cs td {
+	width: 50%;
+	vertical-align: top;
+}
+.cs th {
+	text-align: right;
+	padding-right: 1ch;
+}
+.cs td {
+	padding-left:1ch;
+	text-align: left;
+}
+.contact {
+	padding-bottom: 0;
+	margin: auto;
+}
+.contact th, .contact td {
+	width: 50%;
+	vertical-align: top;
+}
+.contact th {
+	text-align: right;
+	padding-right: 1ch;
+}
+input[type=email], input[type=text],textarea{
+    background-color: transparent;
+	  background-color: #eee;
+    position: relative;
+    padding: 15px;
+    border: 1px solid black;
+    margin-bottom: -1px;
+    transition: all 0.2s ease 0s;
+    color: black;
+    opacity: 0.8;
+}
+input[type=email]:active,input[type=email]:focus, input[type=text]:active,input[type=text]:focus,
+textarea:active, textarea:focus{
+	  background-color: #eee;
+    position: relative;
+    padding: 15px;
+    border: 1px solid black;
+    margin-bottom: -1px;
+    transition: all 0.2s ease 0s;
+    color: #333;
+    opacity: 1;
+}
+input, textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+    width: 100%;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align:left;
+}
+textarea{
+  height:150px;}
+input[type=submit],input[type=submit]:active{
+	  background-color: #eee;
+    color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 12px 15px 12px 25px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+input[type=submit]:hover,input[type=submit]:focus{
+    background-color: rgb(0, 50, 210);
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 50, 210);
+    cursor: pointer;
+}
+/***/
+/***/
+
+.Grid{
+  width:100%;
+}
+.Cell {
+  background:#000;
+  padding:24px;
+}
+.topside:after,
+.bottomside:after
+{
+clear:both;
+}
+
+.top20{
+	  padding-top:70px;
+	 	padding-bottom:5px;
+}
+@media (min-width: 800px){
+h1 {
+    font-size: 32px;
+		text-align:left;
+}
+}
+@media (max-width: 730px) {
+  .Cell {
+  clear:both;
+  display:block;
+  max-width:100%;
+  width: calc(100%*12/12)!important;
+}
+}
+
+/***/
+
+@media (max-width: 350px) {
+	nav #brand {
+	font-size:calc(10vw);
+	}
+}
+
+@media (max-width: 781px) {
+  #toggle {
+    visibility: visible;
+    opacity: 1;
+  }
+  nav #menu {
+    display: none;
+  }
+}
+
+@media (min-width: 781px) {
+  #resize {
+    visibility: hidden !important;
+  }
+}
+
+@media (max-width: 1000px) {
+	
+.wrap{
+width:100%;
+margin:30px 0;
+}
+#bodycopy{
+width:100%;
+}
+}
