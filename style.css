@@ -67,6 +67,40 @@ h2, h3, h4 {
     margin-left: 0;
     padding-bottom: 10px;
 }
+h2:before{
+    content:'';
+    display:inline-block;
+    vertical-align:middle;
+    height:8px;
+    background:black;
+    width:8px;
+    border:2px solid white;
+    margin:-6px 12px 0;
+    margin-left:-20px;
+    border-radius:10px;
+    z-index:9999999;
+}
+h2:after{
+    content:'';
+    display:inline-block;
+    vertical-align:middle;
+    height:8px;
+    background:#ffffff;
+    width:8px;
+    xborder:2px solid #ffffff;
+    margin:2px 12px 0;
+    margin-left:-20px;
+    position:absolute;
+    top:5px;
+    left:00px;
+    border-radius:10px;
+    z-index:3;
+    opacity:0;
+    transition:opacity .23s cubic-bezier(0.93, 0.67, 0.23, 0.51);
+}
+h2:hover:after{
+    opacity:1;
+}
 a:link,
 a:visited {
     color: inherit;
