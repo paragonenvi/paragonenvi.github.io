@@ -66,6 +66,7 @@ h2, h3, h4 {
     font-weight: normal;
     margin-left: 0;
     padding-bottom: 10px;
+    position:relative;
 }
 h2:before{
     content:'';
